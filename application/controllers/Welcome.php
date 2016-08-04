@@ -20,9 +20,9 @@ class Welcome extends CI_Controller {
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
     public function index() {
-        app_log('CUSTOM', 'APP', 'test log file');
-        $res = $this->db->select('*')->from('menus')->get()->result_array();
-        query_log();        
+        //app_log('CUSTOM', 'APP', 'test log file');
+        //$res = $this->db->select('*')->from('menus')->get()->result_array();
+        //query_log();        
         $this->load->view('welcome_message');
     }
 
