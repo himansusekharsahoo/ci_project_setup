@@ -72,5 +72,34 @@ if (!function_exists('query_log')) {
             }
         }
     }
+}
+if (!function_exists('c_encode')) {
 
+    /**
+     * @method: c_encode
+     * @param	value to be encoded
+     * @return	encoded string
+     * @desc Encodes the given value
+     */
+    function c_encode($value){
+        $CI =& get_instance();
+        return str_replace('/','~', $CI->c_encrypt->c_encode($value));
+        
+    }
+}
+
+if (!function_exists('c_decode')) {
+
+    /**
+     * @method: c_decode
+     * @param	string to be decoded
+     * @return	decoded value
+     * @desc Decodes the given string
+     */
+    
+    function c_decode($value){
+        $CI =& get_instance();
+        $value=str_replace('~','/',$value);
+        return $CI->c_encrypt->c_decode($value);        
+    }
 }
