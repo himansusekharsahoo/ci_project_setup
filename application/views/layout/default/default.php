@@ -14,7 +14,7 @@
             var app_ver = '<?= APP_VER ?>';
         </script>
         <!-- Bootstrap Core CSS -->
-        <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="layout/default/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="layout/default/css/heroic-features.css" rel="stylesheet">
 
@@ -67,8 +67,8 @@
         </div>
         <!-- /.container -->
         <!-- jQuery -->
-        <script src="vendor/components/jquery/jquery.min.js"></script>
+        <script src="layout/default/js/jquery.js"></script>
         <!-- Bootstrap Core JavaScript -->
-        <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="layout/default/js/bootstrap.min.js"></script>
     </body>
 </html> 
