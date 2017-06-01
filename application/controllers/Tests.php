@@ -8,6 +8,8 @@ class Tests extends CI_Controller{
     
     public function layout1(){
         $this->layout->navTitle='Latest Features';
+        $this->scripts_include->includePlugins(array('test'),'js');
+        $this->scripts_include->includePlugins(array('test'),'css');
         $this->layout->render();
     }
     public function layout2(){

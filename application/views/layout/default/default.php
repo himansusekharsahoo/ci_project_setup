@@ -13,10 +13,10 @@
         <script type="text/javascript">
             var app_ver = '<?= APP_VER ?>';
         </script>
-        <!-- Bootstrap Core CSS -->
-        <link href="layout/default/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="layout/default/css/heroic-features.css" rel="stylesheet">
+        <?php
+        echo $this->scripts_include->includeCss();
+        echo $this->scripts_include->preJs();
+        ?>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,9 +66,7 @@
             ?>
         </div>
         <!-- /.container -->
-        <!-- jQuery -->
-        <script src="layout/default/js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="layout/default/js/bootstrap.min.js"></script>
+        <!-- jQuery -->        
+        <?= $this->scripts_include->includeJs(); ?>
     </body>
 </html> 
